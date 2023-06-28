@@ -37,24 +37,22 @@ AND hour > "14:00:00";
    
 6. Selezionare tutti i corsi di laurea magistrale `(38)`
 ```sql
-
-
-
+SELECT *
+FROM degrees
+WHERE level LIKE "magistrale";
 ```
    
 7. Contare il numero di dipartimenti di cui è composta l'università `(12)`
 ```sql
-
-
-
+SELECT COUNT(*)
+FROM departments;
 ```
    
 8. Contare gli insegnanti che non hanno un numero di telefono `(50)`
 ```sql
-
-
-
-```
+SELECT COUNT(*)
+FROM teachers
+WHERE phone IS null;
 
 
 #### GROUP BY
